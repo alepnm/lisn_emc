@@ -57,7 +57,7 @@ U 1 1 5A6744FC
 P 3750 2850
 F 0 "C1" H 3900 2900 50  0000 L CNN
 F 1 "1.0uF" H 3900 2800 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L24.0mm_W8.6mm_P22.50mm_MKT" H 3788 2700 50  0001 C CNN
+F 2 "Capacitors_THT:C_Rect_L31.5mm_W11.0mm_P27.50mm_MKS4" H 3788 2700 50  0001 C CNN
 F 3 "" H 3750 2850 50  0001 C CNN
 	1    3750 2850
 	1    0    0    -1  
@@ -68,22 +68,18 @@ U 1 1 5A67453A
 P 4050 2400
 F 0 "L1" V 4150 2400 50  0000 C CNN
 F 1 "50uH/10A" V 4000 2350 50  0000 C CNN
-F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_8x16mm_Vertical" H 4050 2400 50  0001 C CNN
+F 2 "disc:Choke_Toroid_12x38mm_Vertical" H 4050 2400 50  0001 C CNN
 F 3 "" H 4050 2400 50  0001 C CNN
 	1    4050 2400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2500 2400 3750 2400
-Wire Wire Line
-	3750 2400 3900 2400
+	2350 2400 3900 2400
 Wire Wire Line
 	3750 2400 3750 2700
 Connection ~ 3750 2400
 Wire Wire Line
-	4200 2400 4400 2400
-Wire Wire Line
-	4400 2400 8050 2400
+	4200 2400 8050 2400
 $Comp
 L C C4
 U 1 1 5A6746AD
@@ -122,35 +118,23 @@ F 15 "-" H 4900 2750 60  0001 C CNN "Komentaras"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4400 2800 4400 2850
+	4400 2800 4400 2900
 Wire Wire Line
-	4400 2850 4400 2900
+	4400 3200 4400 3400
 Wire Wire Line
-	4400 3200 4400 3300
+	2200 3300 8350 3300
 Wire Wire Line
-	4400 3300 4400 3400
-Wire Wire Line
-	2500 3300 2800 3300
-Wire Wire Line
-	2800 3300 3750 3300
-Wire Wire Line
-	3750 3300 4400 3300
-Wire Wire Line
-	4400 3300 8050 3300
-Wire Wire Line
-	3750 3000 3750 3300
-Wire Wire Line
-	3750 3300 3750 3600
+	3750 3000 3750 3600
 Connection ~ 3750 3300
 $Comp
 L Earth #PWR1
 U 1 1 5A67493F
-P 2800 3400
-F 0 "#PWR1" H 2800 3150 50  0001 C CNN
-F 1 "Earth" H 2800 3250 50  0001 C CNN
-F 2 "" H 2800 3400 50  0001 C CNN
-F 3 "" H 2800 3400 50  0001 C CNN
-	1    2800 3400
+P 2800 3650
+F 0 "#PWR1" H 2800 3400 50  0001 C CNN
+F 1 "Earth" H 2800 3500 50  0001 C CNN
+F 2 "" H 2800 3650 50  0001 C CNN
+F 3 "" H 2800 3650 50  0001 C CNN
+	1    2800 3650
 	1    0    0    -1  
 $EndComp
 Connection ~ 4400 3300
@@ -160,7 +144,7 @@ U 1 1 5A6749C3
 P 3750 3750
 F 0 "C2" H 3900 3700 50  0000 L CNN
 F 1 "1.0uF" H 3900 3600 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L24.0mm_W8.6mm_P22.50mm_MKT" H 3788 3600 50  0001 C CNN
+F 2 "Capacitors_THT:C_Rect_L31.5mm_W11.0mm_P27.50mm_MKS4" H 3788 3600 50  0001 C CNN
 F 3 "" H 3750 3750 50  0001 C CNN
 	1    3750 3750
 	1    0    0    -1  
@@ -200,9 +184,7 @@ F 3 "" H 4400 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 3700 4400 3750
-Wire Wire Line
-	4400 3750 4400 3800
+	4400 3700 4400 3800
 Wire Wire Line
 	4400 4100 4400 4200
 Wire Wire Line
@@ -214,19 +196,15 @@ U 1 1 5A674B2E
 P 4050 4200
 F 0 "L2" V 4150 4200 50  0000 C CNN
 F 1 "50uH/10A" V 4000 4150 50  0000 C CNN
-F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_8x16mm_Vertical" H 4050 4200 50  0001 C CNN
+F 2 "disc:Choke_Toroid_12x38mm_Vertical" H 4050 4200 50  0001 C CNN
 F 3 "" H 4050 4200 50  0001 C CNN
 	1    4050 4200
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4200 4200 4400 4200
+	4200 4200 8050 4200
 Wire Wire Line
-	4400 4200 8050 4200
-Wire Wire Line
-	2450 4200 3750 4200
-Wire Wire Line
-	3750 4200 3900 4200
+	2350 4200 3900 4200
 Connection ~ 4400 4200
 Wire Wire Line
 	4400 2850 4700 2850
@@ -247,17 +225,13 @@ PE
 Text Label 3100 4200 0    60   ~ 0
 NEU
 Wire Wire Line
-	5250 3650 5550 3650
-Wire Wire Line
-	5550 3650 6300 3650
+	5250 3650 6300 3650
 Wire Wire Line
 	5550 3650 5550 4400
 Wire Wire Line
 	5550 4400 3300 4400
 Wire Wire Line
-	3300 4400 3300 4750
-Wire Wire Line
-	3300 4750 3300 4850
+	3300 4400 3300 4850
 $Comp
 L R_xxx_0805_1% R1
 U 1 1 5A67517D
@@ -307,42 +281,12 @@ $EndComp
 Wire Wire Line
 	3500 4850 3500 4750
 Wire Wire Line
-	3300 4750 3500 4750
-Wire Wire Line
-	3500 4750 3600 4750
+	3300 4750 3600 4750
 Connection ~ 3300 4750
 Wire Wire Line
 	3300 5150 3300 5250
 Wire Wire Line
-	3000 5250 3300 5250
-Wire Wire Line
-	3300 5250 3500 5250
-Wire Wire Line
-	3500 5250 4000 5250
-Wire Wire Line
-	4000 5250 4500 5250
-Wire Wire Line
-	4500 5250 5000 5250
-Wire Wire Line
-	5000 5250 5500 5250
-Wire Wire Line
-	5500 5250 5750 5250
-Wire Wire Line
-	5750 5250 6050 5250
-Wire Wire Line
-	6050 5250 6300 5250
-Wire Wire Line
-	6300 5250 6800 5250
-Wire Wire Line
-	6800 5250 7050 5250
-Wire Wire Line
-	7050 5250 7350 5250
-Wire Wire Line
-	7350 5250 7600 5250
-Wire Wire Line
-	7600 5250 7850 5250
-Wire Wire Line
-	7850 5250 8250 5250
+	3000 5250 8250 5250
 Wire Wire Line
 	7600 5150 7600 5250
 Wire Wire Line
@@ -396,9 +340,7 @@ F 15 "-" H 4500 4700 60  0001 C CNN "Komentaras"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3900 4750 4000 4750
-Wire Wire Line
-	4000 4750 4100 4750
+	3900 4750 4100 4750
 Wire Wire Line
 	4000 4750 4000 4850
 Wire Wire Line
@@ -410,7 +352,7 @@ U 1 1 5A675809
 P 4250 4750
 F 0 "C3" V 4400 4850 50  0000 L CNN
 F 1 "0.47uF" V 4400 4550 50  0000 L CNN
-F 2 "capacitors:C_0805" H 4288 4600 50  0001 C CNN
+F 2 "Capacitors_THT:C_Rect_L10.0mm_W4.0mm_P7.50mm_MKS4" H 4288 4600 50  0001 C CNN
 F 3 "" H 4250 4750 50  0001 C CNN
 	1    4250 4750
 	0    -1   -1   0   
@@ -422,15 +364,13 @@ U 1 1 5A6759C1
 P 4750 4750
 F 0 "C6" V 4900 4800 50  0000 L CNN
 F 1 "0.47uF" V 4900 4500 50  0000 L CNN
-F 2 "capacitors:C_0805" H 4788 4600 50  0001 C CNN
+F 2 "Capacitors_THT:C_Rect_L10.0mm_W4.0mm_P7.50mm_MKS4" H 4788 4600 50  0001 C CNN
 F 3 "" H 4750 4750 50  0001 C CNN
 	1    4750 4750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4400 4750 4500 4750
-Wire Wire Line
-	4500 4750 4600 4750
+	4400 4750 4600 4750
 $Comp
 L L_Core_Iron L3
 U 1 1 5A675BE1
@@ -472,9 +412,7 @@ F 15 "-" H 5500 4700 60  0001 C CNN "Komentaras"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4900 4750 5000 4750
-Wire Wire Line
-	5000 4750 5100 4750
+	4900 4750 5100 4750
 Wire Wire Line
 	5000 4750 5000 4850
 Wire Wire Line
@@ -533,15 +471,7 @@ Wire Wire Line
 	5500 5150 5500 5250
 Connection ~ 5500 5250
 Wire Wire Line
-	5400 4750 5500 4750
-Wire Wire Line
-	5500 4750 5750 4750
-Wire Wire Line
-	5750 4750 6050 4750
-Wire Wire Line
-	6050 4750 6300 4750
-Wire Wire Line
-	6300 4750 6400 4750
+	5400 4750 6400 4750
 Wire Wire Line
 	5750 4750 5750 4850
 Wire Wire Line
@@ -676,13 +606,7 @@ F 15 "-" H 7550 4700 60  0001 C CNN "Komentaras"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6700 4750 6800 4750
-Wire Wire Line
-	6800 4750 7050 4750
-Wire Wire Line
-	7050 4750 7350 4750
-Wire Wire Line
-	7350 4750 7600 4750
+	6700 4750 7600 4750
 Wire Wire Line
 	7050 4750 7050 4850
 Wire Wire Line
@@ -717,9 +641,7 @@ F 3 "" H 7600 5000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7600 4400 7600 4750
-Wire Wire Line
-	7600 4750 7600 4850
+	7600 4400 7600 4850
 Connection ~ 7050 4750
 Connection ~ 7050 5250
 Wire Wire Line
@@ -798,9 +720,7 @@ F 3 "" H 9600 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 3750 7850 4750
-Wire Wire Line
-	7850 4750 7850 4850
+	7850 3750 7850 4850
 Wire Wire Line
 	3000 5250 3000 3450
 Wire Wire Line
@@ -827,7 +747,7 @@ Wire Wire Line
 Connection ~ 7850 5250
 Connection ~ 7850 4750
 Wire Wire Line
-	2800 3400 2800 3300
+	2800 3300 2800 3650
 Connection ~ 2800 3300
 Wire Notes Line
 	2550 2150 8550 2150
@@ -852,141 +772,119 @@ Connection ~ 2950 5450
 Wire Wire Line
 	2950 5450 2950 5550
 $Comp
-L Faston_6.3x08x14 X2
-U 1 1 5A6A569C
-P 2500 2400
-F 0 "X2" H 2250 2400 50  0000 C CNN
-F 1 "LINE" H 2250 2500 50  0000 C CNN
-F 2 "mech:Faston_6.3x0.8x14" H 3150 2400 50  0001 C CNN
-F 3 "" H 3900 2000 50  0001 C CNN
-F 4 "ZAJ023" H 2250 2300 60  0001 C CNN "ventcode"
-F 5 "-" H 2750 2300 60  0001 C CNN "Nominalas"
-F 6 "0" H 3650 2300 60  0001 C CNN "Kaina"
-F 7 "-" H 2850 2300 60  0001 C CNN "Korpusas"
-F 8 "10" H 3500 2300 60  0001 C CNN "Aukstis"
-F 9 "-" H 2950 2300 60  0001 C CNN "Marke"
-F 10 "Kontaktas" H 2900 2450 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 3050 2300 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 3150 2300 60  0001 C CNN "Nuoroda"
-F 13 "DIP" H 3800 2300 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 3250 2300 60  0001 C CNN "Parametras"
-F 15 "-" H 3350 2300 60  0001 C CNN "Komentaras"
-	1    2500 2400
-	1    0    0    -1  
+L MSTBA_3C_5.08_Angled J1
+U 1 1 5A6AC538
+P 2200 3100
+F 0 "J1" H 2300 3200 50  0000 C CNN
+F 1 "MSTBA_3C_5.08_Angled" H 3070 3090 50  0001 C CNN
+F 2 "mech:PhoenixContact_MSTBA-G_03x5.08mm_Angled" H 3570 2890 50  0001 C CNN
+F 3 "" H 2400 3200 50  0001 C CNN
+F 4 "ZAJ372" H 2300 2800 60  0001 C CNN "ventcode"
+F 5 "-" H 2300 2800 60  0001 C CNN "Nominalas"
+F 6 "0" H 3570 2990 60  0001 C CNN "Kaina"
+F 7 "-" H 2620 2990 60  0001 C CNN "Korpusas"
+F 8 "16" H 3770 2990 60  0001 C CNN "Aukstis"
+F 9 "-" H 2720 2990 60  0001 C CNN "Marke"
+F 10 "Kištukas" H 3820 3090 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 2820 2990 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 2920 2990 60  0001 C CNN "Nuoroda"
+F 13 "DIP" H 3370 2990 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 3020 2990 60  0001 C CNN "Parametras"
+F 15 "-" H 3120 2990 60  0001 C CNN "Komentaras"
+	1    2200 3100
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Faston_6.3x08x14 X3
-U 1 1 5A6A5807
-P 2500 3300
-F 0 "X3" H 2250 3300 50  0000 C CNN
-F 1 "PE" H 2250 3400 50  0000 C CNN
-F 2 "mech:Faston_6.3x0.8x14" H 3150 3300 50  0001 C CNN
-F 3 "" H 3900 2900 50  0001 C CNN
-F 4 "ZAJ023" H 2250 3200 60  0001 C CNN "ventcode"
-F 5 "-" H 2750 3200 60  0001 C CNN "Nominalas"
-F 6 "0" H 3650 3200 60  0001 C CNN "Kaina"
-F 7 "-" H 2850 3200 60  0001 C CNN "Korpusas"
-F 8 "10" H 3500 3200 60  0001 C CNN "Aukstis"
-F 9 "-" H 2950 3200 60  0001 C CNN "Marke"
-F 10 "Kontaktas" H 2900 3350 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 3050 3200 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 3150 3200 60  0001 C CNN "Nuoroda"
-F 13 "DIP" H 3800 3200 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 3250 3200 60  0001 C CNN "Parametras"
-F 15 "-" H 3350 3200 60  0001 C CNN "Komentaras"
-	1    2500 3300
+L MSTBA_3C_5.08_Angled J4
+U 1 1 5A6ACA00
+P 8350 3100
+F 0 "J4" H 8450 3200 50  0000 C CNN
+F 1 "MSTBA_3C_5.08_Angled" H 9220 3090 50  0001 C CNN
+F 2 "mech:PhoenixContact_MSTBA-G_03x5.08mm_Angled" H 9720 2890 50  0001 C CNN
+F 3 "" H 8550 3200 50  0001 C CNN
+F 4 "ZAJ372" H 8450 2800 60  0001 C CNN "ventcode"
+F 5 "-" H 8450 2800 60  0001 C CNN "Nominalas"
+F 6 "0" H 9720 2990 60  0001 C CNN "Kaina"
+F 7 "-" H 8770 2990 60  0001 C CNN "Korpusas"
+F 8 "16" H 9920 2990 60  0001 C CNN "Aukstis"
+F 9 "-" H 8870 2990 60  0001 C CNN "Marke"
+F 10 "Kištukas" H 9970 3090 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 8970 2990 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 9070 2990 60  0001 C CNN "Nuoroda"
+F 13 "DIP" H 9520 2990 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 9170 2990 60  0001 C CNN "Parametras"
+F 15 "-" H 9270 2990 60  0001 C CNN "Komentaras"
+	1    8350 3100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2200 3200 2350 3200
+Wire Wire Line
+	2350 3200 2350 4200
+Wire Wire Line
+	2200 3100 2350 3100
+Wire Wire Line
+	2350 3100 2350 2400
+Wire Wire Line
+	8350 3200 8050 3200
+Wire Wire Line
+	8050 3200 8050 4200
+Wire Wire Line
+	8350 3100 8050 3100
+Wire Wire Line
+	8050 3100 8050 2400
 $Comp
 L Faston_6.3x08x14 X1
-U 1 1 5A6A587E
-P 2450 4200
-F 0 "X1" H 2200 4200 50  0000 C CNN
-F 1 "NEU" H 2200 4300 50  0000 C CNN
-F 2 "mech:Faston_6.3x0.8x14" H 3100 4200 50  0001 C CNN
-F 3 "" H 3850 3800 50  0001 C CNN
-F 4 "ZAJ023" H 2200 4100 60  0001 C CNN "ventcode"
-F 5 "-" H 2700 4100 60  0001 C CNN "Nominalas"
-F 6 "0" H 3600 4100 60  0001 C CNN "Kaina"
-F 7 "-" H 2800 4100 60  0001 C CNN "Korpusas"
-F 8 "10" H 3450 4100 60  0001 C CNN "Aukstis"
-F 9 "-" H 2900 4100 60  0001 C CNN "Marke"
-F 10 "Kontaktas" H 2850 4250 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 3000 4100 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 3100 4100 60  0001 C CNN "Nuoroda"
-F 13 "DIP" H 3750 4100 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 3200 4100 60  0001 C CNN "Parametras"
-F 15 "-" H 3300 4100 60  0001 C CNN "Komentaras"
-	1    2450 4200
+U 1 1 5A6B05A7
+P 2150 3500
+F 0 "X1" H 1850 3600 50  0000 C CNN
+F 1 "PE" H 1900 3500 50  0000 C CNN
+F 2 "mech:Faston_6.3x0.8x14" H 2800 3500 50  0001 C CNN
+F 3 "" H 3550 3100 50  0001 C CNN
+F 4 "ZAJ023" H 1900 3400 60  0001 C CNN "ventcode"
+F 5 "-" H 2400 3400 60  0001 C CNN "Nominalas"
+F 6 "0" H 3300 3400 60  0001 C CNN "Kaina"
+F 7 "-" H 2500 3400 60  0001 C CNN "Korpusas"
+F 8 "10" H 3150 3400 60  0001 C CNN "Aukstis"
+F 9 "-" H 2600 3400 60  0001 C CNN "Marke"
+F 10 "Kontaktas" H 2550 3550 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 2700 3400 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 2800 3400 60  0001 C CNN "Nuoroda"
+F 13 "DIP" H 3450 3400 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 2900 3400 60  0001 C CNN "Parametras"
+F 15 "-" H 3000 3400 60  0001 C CNN "Komentaras"
+	1    2150 3500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2150 3500 2800 3500
+Connection ~ 2800 3500
 $Comp
-L Faston_6.3x08x14 X?
-U 1 1 5A6A8DA6
-P 8050 2400
-F 0 "X?" H 7800 2400 50  0000 C CNN
-F 1 "LINE" H 7800 2300 50  0000 C CNN
-F 2 "mech:Faston_6.3x0.8x14" H 8700 2400 50  0001 C CNN
-F 3 "" H 9450 2000 50  0001 C CNN
-F 4 "ZAJ023" H 7800 2300 60  0001 C CNN "ventcode"
-F 5 "-" H 8300 2300 60  0001 C CNN "Nominalas"
-F 6 "0" H 9200 2300 60  0001 C CNN "Kaina"
-F 7 "-" H 8400 2300 60  0001 C CNN "Korpusas"
-F 8 "10" H 9050 2300 60  0001 C CNN "Aukstis"
-F 9 "-" H 8500 2300 60  0001 C CNN "Marke"
-F 10 "Kontaktas" H 8450 2450 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 8600 2300 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 8700 2300 60  0001 C CNN "Nuoroda"
-F 13 "DIP" H 9350 2300 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 8800 2300 60  0001 C CNN "Parametras"
-F 15 "-" H 8900 2300 60  0001 C CNN "Komentaras"
-	1    8050 2400
+L Faston_6.3x08x14 X2
+U 1 1 5A6B0EDF
+P 8150 3550
+F 0 "X2" H 7900 3450 50  0000 C CNN
+F 1 "PE" H 7900 3550 50  0000 C CNN
+F 2 "mech:Faston_6.3x0.8x14" H 8800 3550 50  0001 C CNN
+F 3 "" H 9550 3150 50  0001 C CNN
+F 4 "ZAJ023" H 7900 3450 60  0001 C CNN "ventcode"
+F 5 "-" H 8400 3450 60  0001 C CNN "Nominalas"
+F 6 "0" H 9300 3450 60  0001 C CNN "Kaina"
+F 7 "-" H 8500 3450 60  0001 C CNN "Korpusas"
+F 8 "10" H 9150 3450 60  0001 C CNN "Aukstis"
+F 9 "-" H 8600 3450 60  0001 C CNN "Marke"
+F 10 "Kontaktas" H 8550 3600 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 8700 3450 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 8800 3450 60  0001 C CNN "Nuoroda"
+F 13 "DIP" H 9450 3450 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 8900 3450 60  0001 C CNN "Parametras"
+F 15 "-" H 9000 3450 60  0001 C CNN "Komentaras"
+	1    8150 3550
 	-1   0    0    1   
 $EndComp
-$Comp
-L Faston_6.3x08x14 X?
-U 1 1 5A6A940E
-P 8050 4200
-F 0 "X?" H 7800 4200 50  0000 C CNN
-F 1 "NEU" H 7800 4100 50  0000 C CNN
-F 2 "mech:Faston_6.3x0.8x14" H 8700 4200 50  0001 C CNN
-F 3 "" H 9450 3800 50  0001 C CNN
-F 4 "ZAJ023" H 7800 4100 60  0001 C CNN "ventcode"
-F 5 "-" H 8300 4100 60  0001 C CNN "Nominalas"
-F 6 "0" H 9200 4100 60  0001 C CNN "Kaina"
-F 7 "-" H 8400 4100 60  0001 C CNN "Korpusas"
-F 8 "10" H 9050 4100 60  0001 C CNN "Aukstis"
-F 9 "-" H 8500 4100 60  0001 C CNN "Marke"
-F 10 "Kontaktas" H 8450 4250 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 8600 4100 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 8700 4100 60  0001 C CNN "Nuoroda"
-F 13 "DIP" H 9350 4100 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 8800 4100 60  0001 C CNN "Parametras"
-F 15 "-" H 8900 4100 60  0001 C CNN "Komentaras"
-	1    8050 4200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Faston_6.3x08x14 X?
-U 1 1 5A6A956A
-P 8050 3300
-F 0 "X?" H 7800 3300 50  0000 C CNN
-F 1 "PE" H 7800 3200 50  0000 C CNN
-F 2 "mech:Faston_6.3x0.8x14" H 8700 3300 50  0001 C CNN
-F 3 "" H 9450 2900 50  0001 C CNN
-F 4 "ZAJ023" H 7800 3200 60  0001 C CNN "ventcode"
-F 5 "-" H 8300 3200 60  0001 C CNN "Nominalas"
-F 6 "0" H 9200 3200 60  0001 C CNN "Kaina"
-F 7 "-" H 8400 3200 60  0001 C CNN "Korpusas"
-F 8 "10" H 9050 3200 60  0001 C CNN "Aukstis"
-F 9 "-" H 8500 3200 60  0001 C CNN "Marke"
-F 10 "Kontaktas" H 8450 3350 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 8600 3200 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 8700 3200 60  0001 C CNN "Nuoroda"
-F 13 "DIP" H 9350 3200 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 8800 3200 60  0001 C CNN "Parametras"
-F 15 "-" H 8900 3200 60  0001 C CNN "Komentaras"
-	1    8050 3300
-	-1   0    0    1   
-$EndComp
+Wire Wire Line
+	8150 3550 7750 3550
+Wire Wire Line
+	7750 3550 7750 3300
+Connection ~ 7750 3300
 $EndSCHEMATC
